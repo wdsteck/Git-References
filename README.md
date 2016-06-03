@@ -13,9 +13,10 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Pro Git book](https://git-scm.com/book/en/v2)
 * [Github Help](https://help.github.com/)
 * [Git Reference](gitref.org)
-* [Data Science School Blog](http://www.dataschool.io/)
+* [Data Science School Blog](http://www.dataschool.io/tag/git/)
 * [Git Guides](https://guides.github.com/)
 * [Git SCM Help](https://git-scm.com/about)
+* [Introduction to Git and GitHub on YouTube](https://youtu.be/h1e8oC7g0Ps?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD)
 
 ## Markdown Resources
 
