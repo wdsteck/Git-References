@@ -23,3 +23,15 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Markdown Tutorials](http://www.markdowntutorial.com/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [What is Markdown?](http://whatismarkdown.com/)
+* 
+## R Programming Tips
+
+* Add runchecks. Here is a template:
+
+# run checks
+# test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
+# cacheSolve(test)
+
+# clean environment
+# rm(list=ls())
+
