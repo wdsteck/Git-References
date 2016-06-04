@@ -2,9 +2,9 @@
 Listing of sources of information for living and thriving in the Git Environment
 
 ## Git and Github
-Git is software that runs on your local computer that lets you manage the configurations of your files using standard practices.
+_Git_ is software that runs on your local computer that lets you manage the configurations of your files using standard practices.
 
-Github is a web service that lets you create repositories of your files for web storage and for sharing.
+_Github_ is a web service that lets you create repositories of your files for web storage and for sharing.
 
 Whereas you do not need to use both tools, they are most often used together to provide a powerful environment for multi-user, change management.
 
@@ -37,30 +37,34 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
 
 ## Swirl
-1. Install swirl
-Since swirl is an R package, you can easily install it by entering a single command from the R console:
+1. swirl Installation
+
+  Since swirl is an R package, you can easily install it by entering a single command from the R console:
   ```
   install.packages("swirl")
   ```
-If you've installed swirl in the past make sure you have version 2.2.21 or later. You can check this with:
+  If you've installed swirl in the past make sure you have version 2.2.21 or later. You can check this with:
   ```
   packageVersion("swirl")
   ```
 
 2. Load swirl
-Every time you want to use swirl, you need to first load the package. From the R console:
+
+  Every time you want to use swirl, you need to first load the package. From the R console:
   ```
   library(swirl)
   ```
 
 3. Install the R Progroamming course
-swirl offers a variety of interactive courses, but for our purposes, you want the one called R Programming. Type the following from the R prompt to install this course:
+
+  swirl offers a variety of interactive courses, but for our purposes, you want the one called R Programming. Type the following from the R prompt to install this course:
   ```
   install_from_swirl("R Programming")
   ```
 
 4. Start swirl and complete the lessons
-Type the following from the R console to start swirl:
+
+  Type the following from the R console to start swirl:
   ```
   swirl()
   ```
