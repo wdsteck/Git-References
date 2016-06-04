@@ -23,15 +23,45 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Markdown Tutorials](http://www.markdowntutorial.com/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [What is Markdown?](http://whatismarkdown.com/)
-* 
+
 ## R Programming Tips
 
-* Add runchecks. Here is a template:
+* Add runchecks at the bottom of your R Code to verify operation of the code. Here is an example template:
 
-# run checks
-# test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
-# cacheSolve(test)
+  ```
+  # run checks
+  test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
+  cacheSolve(test)
+  clean environment
+  rm(list=ls())
+  ```
 
-# clean environment
-# rm(list=ls())
+## Swirl
+1. Install swirl
+Since swirl is an R package, you can easily install it by entering a single command from the R console:
+  ```
+  install.packages("swirl")
+  ```
+If you've installed swirl in the past make sure you have version 2.2.21 or later. You can check this with:
+  ```
+  packageVersion("swirl")
+  ```
 
+2. Load swirl
+Every time you want to use swirl, you need to first load the package. From the R console:
+  ```
+  library(swirl)
+  ```
+
+3. Install the R Progroamming course
+swirl offers a variety of interactive courses, but for our purposes, you want the one called R Programming. Type the following from the R prompt to install this course:
+  ```
+  install_from_swirl("R Programming")
+  ```
+
+4. Start swirl and complete the lessons
+Type the following from the R console to start swirl:
+  ```
+  swirl()
+  ```
+  
