@@ -32,7 +32,8 @@ Whereas you do not need to use both tools, they are most often used together to 
   # run checks
   test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
   cacheSolve(test)
-  clean environment
+  
+  # clean environment
   rm(list=ls())
   ```
 
