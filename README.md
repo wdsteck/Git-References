@@ -24,8 +24,9 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [What is Markdown?](http://whatismarkdown.com/)
 
-## R Programming Tips
+## R Programming Tips and Resources
 
+* [Data Science Bootcamp](https://www.datacamp.com) is a good source of R tutorials.
 * Add runchecks at the bottom of your R Code to verify operation of the code. Here is an example template:
 
   ```
