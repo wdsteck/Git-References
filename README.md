@@ -45,6 +45,7 @@ Whereas you do not need to use both tools, they are most often used together to 
   install.packages("plyr")
   install.packages("ggplot2")
   install.packages("gridExtra")
+  
   require("XML")
   require("plyr")
   require("ggplot2")
