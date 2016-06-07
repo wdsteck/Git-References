@@ -68,8 +68,11 @@ Whereas you do not need to use both tools, they are most often used together to 
     }
   }
   ```
-#### XML Library Information
+#### XML Information
 [XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
+#### XML Information
+  * [R-Bloggers](http://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/) - A good jsonlite tutorial.
+  * [CRAN](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html) - Quick start guide from CRAN
 
 ### Swirl
 1. swirl Installation
