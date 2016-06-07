@@ -66,6 +66,8 @@ Whereas you do not need to use both tools, they are most often used together to 
     }
   }
   ```
+#### XML Library Information
+[XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
 
 ### Swirl
 1. swirl Installation
