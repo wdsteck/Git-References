@@ -45,11 +45,13 @@ Whereas you do not need to use both tools, they are most often used together to 
   install.packages("plyr")
   install.packages("ggplot2")
   install.packages("gridExtra")
+  install.packages("jsonlite")
   
   require("XML")
   require("plyr")
   require("ggplot2")
   require("gridExtra")
+  require("jsonlite")
   ```
   
   `require()` and `library()` do the same thing, except `require()` returns a bool to indicate if the package is loaded whereas `library()` stops on an exception. `require()` is useful in code as in this example:
