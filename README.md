@@ -38,7 +38,35 @@ Whereas you do not need to use both tools, they are most often used together to 
   rm(list=ls())
   ```
 
-## Swirl
+### Useful Packages
+  Some useful packages:
+  ```
+  install.packages("XML")
+  install.packages("plyr")
+  install.packages("ggplot2")
+  install.packages("gridExtra")
+  require("XML")
+  require("plyr")
+  require("ggplot2")
+  require("gridExtra")
+  ```
+  
+  `require()` and `library()` do the same thing, except `require()` returns a bool to indicate if the package is loaded whereas `library()` stops on an exception. `require()` is useful in code as in this example:
+  ```
+  if(require("lme4")){
+    print("lme4 is loaded correctly")
+  } else {
+    print("trying to install lme4")
+    install.packages("lme4")
+    if(require(lme4)){
+      print("lme4 installed and loaded")
+    } else {
+      stop("could not install lme4")
+    }
+  }
+  ```
+
+### Swirl
 1. swirl Installation
 
   Since swirl is an R package, you can easily install it by entering a single command from the R console:
