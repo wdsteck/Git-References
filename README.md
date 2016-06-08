@@ -43,18 +43,23 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
   install.packages("XML")
   install.packages("plyr")
+  install.packages("dplyr")
+  install.packages("tidyr")
   install.packages("ggplot2")
   install.packages("gridExtra")
   install.packages("jsonlite")
   
   require("XML")
   require("plyr")
+  require("dplyr")
+  require("tidyr")
   require("ggplot2")
   require("gridExtra")
   require("jsonlite")
   ```
   
   `require()` and `library()` do the same thing, except `require()` returns a bool to indicate if the package is loaded whereas `library()` stops on an exception. `require()` is useful in code as in this example:
+  
   ```
   if(require("lme4")){
     print("lme4 is loaded correctly")
@@ -70,9 +75,12 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
 #### XML Information
 [XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
-#### XML Information
+#### JSON Information
   * [R-Bloggers](http://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/) - A good jsonlite tutorial.
   * [CRAN](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html) - Quick start guide from CRAN
+  
+#### tidyr Package Information
+  * [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 
 ### Swirl
 1. swirl Installation
@@ -106,4 +114,12 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
   swirl()
   ```
+
+And for easy copy and paste:
+  ```
+  install.packages("swirl")
+  library(swirl)
+  swirl()
+  ```
+  
   
