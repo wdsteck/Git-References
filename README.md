@@ -28,7 +28,6 @@ Whereas you do not need to use both tools, they are most often used together to 
 
 * [Data Science Bootcamp](https://www.datacamp.com) is a good source of R tutorials.
 * Add runchecks at the bottom of your R Code to verify operation of the code. Here is an example template:
-
   ```
   # run checks
   test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
@@ -37,29 +36,21 @@ Whereas you do not need to use both tools, they are most often used together to 
   # clean environment
   rm(list=ls())
   ```
+* [Vanderbuilt University Biostat Department R Information Page](http://biostat.mc.vanderbilt.edu/wiki/Main/RS)
 
 ### Useful Packages
   Some useful packages:
   ```
-  install.packages("XML")
-  install.packages("plyr")
-  install.packages("dplyr")
-  install.packages("tidyr")
   install.packages("ggplot2")
   install.packages("gridExtra")
-  install.packages("jsonlite")
   
-  require("XML")
-  require("plyr")
-  require("dplyr")
-  require("tidyr")
   require("ggplot2")
   require("gridExtra")
-  require("jsonlite")
   ```
   
   `require()` and `library()` do the same thing, except `require()` returns a bool to indicate if the package is loaded whereas `library()` stops on an exception. `require()` is useful in code as in this example:
-  
+
+For if you need a package in a piece of code, make sure it is installed and loaded:
   ```
   if(require("lme4")){
     print("lme4 is loaded correctly")
@@ -74,15 +65,54 @@ Whereas you do not need to use both tools, they are most often used together to 
   }
   ```
 #### XML Information
-[XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
+  [XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
+  ```
+  install.packages("XML")
+  require("XML")
+  ```
+
 #### JSON Information
   * [R-Bloggers](http://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/) - A good jsonlite tutorial.
   * [CRAN](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html) - Quick start guide from CRAN
-  
+
+  ```
+  require("jsonlite")
+  install.packages("jsonlite")
+  ```
+
 #### tidyr Package Information
   * [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 
-### Swirl
+  ```
+  install.packages("plyr")
+  install.packages("dplyr")
+  install.packages("tidyr")
+
+  require("plyr")
+  require("dplyr")
+  require("tidyr")
+  ```
+  
+#### MySQL Package Information
+  MySQL Details:
+  * [Wiki](https://en.wikipedia.org/wiki/MySQL)
+  * [MySQL Home](http://www.mysql.com)
+  * [Install MySQL Server on computer](http://dev.mysql.com/doc/refman/5.7/en/installing.html)
+  * [Guide to Install MySQL R packages](http://biostat.mc.vanderbilt.edu/wiki/Main/RMySQL)
+
+  ```
+  install.packages("RMySQL")
+  require("RMySQL")
+  ```
+  
+  Eample Use:
+  ```
+  ucscDB <- dbConnect(MySQL(), user="genome", host="genome-mysql.cse.ucsc.edu")
+  result <- dbGetQuery(ucscDB,"show databases;")
+  dbDisconnect(ucscDB)
+  ```
+  
+#### Swirl
 1. swirl Installation
 
   Since swirl is an R package, you can easily install it by entering a single command from the R console:
