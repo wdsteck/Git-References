@@ -14,9 +14,9 @@ MySQL Details:
   require("RMySQL")
   ```
   
-  Example Use:
-  
-  List the databases in the ucsc.edu genome site:
+Example Use:
+
+ - List the databases in the ucsc.edu genome site:
   ```
   # Open the connection to the Db
   ucscDB <- dbConnect(MySQL(), user="genome", host="genome-mysql.cse.ucsc.edu")
@@ -27,7 +27,7 @@ MySQL Details:
   dbDisconnect(ucscDB)
   ```
   
-  Look at one particular database - the 19th version of the human genome (hg19)
+ - Look at one particular database - the 19th version of the human genome (hg19)
   ```
   # this time, connect to the Db
   hg19 <- dbConnect(MySQL(), user="genome", db="hg19", host="genome-mysql.cse.ucsc.edu")
