@@ -17,6 +17,7 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Git Guides](https://guides.github.com/)
 * [Git SCM Help](https://git-scm.com/about)
 * [Introduction to Git and GitHub on YouTube](https://youtu.be/h1e8oC7g0Ps?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD)
+* [BioConductor Web Site](http://www.bioconductor.org) - Open source software for bioinformatics.
 
 ## Markdown Resources
 
@@ -64,14 +65,14 @@ For if you need a package in a piece of code, make sure it is installed and load
     }
   }
   ```
-#### XML Information
+### XML Information
   [XML Presentation](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf) is a good tutorial on extracting data out of XML in R.
   ```
   install.packages("XML")
   require("XML")
   ```
 
-#### JSON Information
+### JSON Information
   * [R-Bloggers](http://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/) - A good jsonlite tutorial.
   * [CRAN](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html) - Quick start guide from CRAN
 
@@ -80,7 +81,7 @@ For if you need a package in a piece of code, make sure it is installed and load
   install.packages("jsonlite")
   ```
 
-#### tidyr Package Information
+### tidyr Package Information
   * [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 
   ```
@@ -93,6 +94,23 @@ For if you need a package in a piece of code, make sure it is installed and load
   require("tidyr")
   ```
   
-####[MySQL Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/mysqlnotes.md)
+###[MySQL Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/mysqlnotes.md)
 
-####[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
+###[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
+
+###HDF5
+* [HDF Group](http://www.hdfgroup.org)
+* [BioConductor HDF5 Tutorial](http://www.bioconductor.org/packages/release/bioc/vignettes/rhdf5/inst/doc/rhdf5.pdf)
+
+  To Install, must install from the bioclite web page:
+  ```
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite("rhdf5")
+  require(rhdf5)
+  file <- "example.h5"
+  created <- h5createFile(file)
+  h5createGroup(file,"foo")
+  h5createGroup(file,"baa")
+  h5createGroup(file,"foo/foobaa")
+  h5ls(file)
+  ```
