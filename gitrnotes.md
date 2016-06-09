@@ -99,3 +99,41 @@ For if you need a package in a piece of code, make sure it is installed and load
 ###[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
 
 ###[HDF5 Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/hdf5notes.md)
+
+###Reading Data from the Web - Webscraping
+
+  ```
+  con = url(https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en)
+  htmlCode = readLines(con)
+  close(con)
+  htmlCode
+  ```
+  This can be ugly since it comes unformatted. Reading it with XML may be better:
+  ```
+  library(XML)
+  url = "https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en"
+  html <- htmlTreeParse(url, useInternalNodes=T)
+  xpathSApply(html, "//title", xmlValue)
+  xpathSApply(html, "//df[@id='col-citedby']", xmlValue)
+  ```
+  This did not work for me. It could not recognize the url as XML. Another way
+  to do it is to use the `httr` package.
+
+  [CRAN HTTR Package](http://cran.r-project.org/web/packages/httr/httr.pdf)
+  [R-Bloggers](http://www.r-bloggers.com/?s=Web+Scraping)Search R-Bloggers
+  for a lot of examples of Web Scraping
+  ```
+  library(httr)
+  html2 = GET(url)
+  content2 = content(html2, as = "text")
+  parsedHtml = htmlParse(content2, asText = T)
+  xpathSApply(parsedHtml, "//title", xmlValue)
+  ```
+  Some sites require authentication. With HTTR, this can be handled:
+  ```
+  handle = GET("http://httpbin.org/basic-auth/user/passwd", authenticate("user", "passwd"))
+  handle
+  names(handle)
+  ```
+  Using handles preserves the authentication so that subsequent gets
+  do not have to be authenticated. Cookies will retain the credentials.
