@@ -110,8 +110,8 @@ For if you need a package in a piece of code, make sure it is installed and load
 
 ###[HDF5 Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/hdf5notes.md)
 
-###Reading Data from the Web - Webscraping
-
+###Reading Data from the Web - Web Scraping
+  Read lines directly from the site. It comes unformatted and is not very easy to parse:
   ```
   url_site = "https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en"
   con = url(url_site)
@@ -130,9 +130,10 @@ For if you need a package in a piece of code, make sure it is installed and load
   This did not work for me. It could not recognize the url as XML. Another way
   to do it is to use the `httr` package.
 
-  [CRAN HTTR Package](http://cran.r-project.org/web/packages/httr/httr.pdf)
-  [R-Bloggers](http://www.r-bloggers.com/?s=Web+Scraping)Search R-Bloggers
+  * [CRAN HTTR Package](http://cran.r-project.org/web/packages/httr/httr.pdf)
+  * [R-Bloggers](http://www.r-bloggers.com/?s=Web+Scraping) - Search R-Bloggers
   for a lot of examples of Web Scraping
+
   ```
   library(httr)
   html2 = GET(url)
