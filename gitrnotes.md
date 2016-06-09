@@ -39,7 +39,17 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
 * [Vanderbuilt University Biostat Department R Information Page](http://biostat.mc.vanderbilt.edu/wiki/Main/RS)
 
-### Useful Packages
+###Useful Packages
+  In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
+
+####Common Connections:
+  * file - open a connection to a file on the local computer
+  * url - open a connection to a url
+  * gzfile - open a connection to a .gz file
+  * bzfile - open a connection to a .bz2 file
+  * _?connections_ for more information
+  * **Remember** to close all connections when finished with them
+
   Some useful packages:
   ```
   install.packages("ggplot2")
@@ -103,7 +113,8 @@ For if you need a package in a piece of code, make sure it is installed and load
 ###Reading Data from the Web - Webscraping
 
   ```
-  con = url(https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en)
+  url_site = "https://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en"
+  con = url(url_site)
   htmlCode = readLines(con)
   close(con)
   htmlCode
