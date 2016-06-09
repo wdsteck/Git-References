@@ -98,19 +98,4 @@ For if you need a package in a piece of code, make sure it is installed and load
 
 ###[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
 
-###HDF5
-* [HDF Group](http://www.hdfgroup.org)
-* [BioConductor HDF5 Tutorial](http://www.bioconductor.org/packages/release/bioc/vignettes/rhdf5/inst/doc/rhdf5.pdf)
-
-  To Install, must install from the bioclite web page:
-  ```
-  source("http://www.bioconductor.org/biocLite.R")
-  biocLite("rhdf5")
-  require(rhdf5)
-  file <- "example.h5"
-  created <- h5createFile(file)
-  h5createGroup(file,"foo")
-  h5createGroup(file,"baa")
-  h5createGroup(file,"foo/foobaa")
-  h5ls(file)
-  ```
+###[HDF5 Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/hdf5notes.md)
