@@ -104,6 +104,10 @@ For if you need a package in a piece of code, make sure it is installed and load
   require("tidyr")
   ```
   
+  * [plyr totorial](http://plyr.had.co.nz/09-user/)
+  * [reshape totorial](http://www.slideshare.net/jeffreybreen/reshaping-data-in-r)
+  * [plyr totorial](http://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/)
+  
 ###[MySQL Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/mysqlnotes.md)
 
 ###[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
