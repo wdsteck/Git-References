@@ -38,6 +38,7 @@ Whereas you do not need to use both tools, they are most often used together to 
   rm(list=ls())
   ```
 * [Vanderbuilt University Biostat Department R Information Page](http://biostat.mc.vanderbilt.edu/wiki/Main/RS)
+* [R Data Merging Page](http://www.statmethods.net/management/merging.html)
 
 ###Useful Packages
   In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
