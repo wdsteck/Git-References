@@ -39,6 +39,7 @@ Whereas you do not need to use both tools, they are most often used together to 
   ```
 * [Vanderbuilt University Biostat Department R Information Page](http://biostat.mc.vanderbilt.edu/wiki/Main/RS)
 * [R Data Merging Page](http://www.statmethods.net/management/merging.html)
+* [Working with Dates](http://www.r-statistics.com/2012/03/do-more-with-dates-and-times-in-r-with-lubridate-1-1-0/)
 
 ###Useful Packages
   In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
@@ -104,10 +105,11 @@ For if you need a package in a piece of code, make sure it is installed and load
   require("dplyr")
   require("tidyr")
   ```
-  
-  * [plyr totorial](http://plyr.had.co.nz/09-user/)
+
   * [reshape totorial](http://www.slideshare.net/jeffreybreen/reshaping-data-in-r)
   * [plyr totorial](http://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/)
+  * [plyr totorial](http://plyr.had.co.nz/09-user/)
+
   
 ###[MySQL Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/mysqlnotes.md)
 
