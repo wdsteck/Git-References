@@ -25,22 +25,14 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [What is Markdown?](http://whatismarkdown.com/)
 
-## R Programming Tips and Resources
+## R Programming Resources
 
 * [Data Science Bootcamp](https://www.datacamp.com) is a good source of R tutorials.
-* Add runchecks at the bottom of your R Code to verify operation of the code. Here is an example template:
-  ```
-  # run checks
-  test <- makeCacheMatrix(matrix(data=c(1:8,9.5), nrow=3, ncol=3))
-  cacheSolve(test)
-  
-  # clean environment
-  rm(list=ls())
-  ```
 * [Vanderbuilt University Biostat Department R Information Page](http://biostat.mc.vanderbilt.edu/wiki/Main/RS)
 * [R Data Merging Page](http://www.statmethods.net/management/merging.html)
 * [Working with Dates](http://www.r-statistics.com/2012/03/do-more-with-dates-and-times-in-r-with-lubridate-1-1-0/)
 * [R Cookbook](http://www.cookbook-r.com)
+* [R Tutorials](http://www.r-bloggers.com/how-to-learn-r-2/)
 
 ###Useful Packages
   In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
@@ -107,11 +99,10 @@ For if you need a package in a piece of code, make sure it is installed and load
   require("tidyr")
   ```
 
-  * [reshape totorial](http://www.slideshare.net/jeffreybreen/reshaping-data-in-r)
-  * [plyr totorial](http://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/)
-  * [plyr totorial](http://plyr.had.co.nz/09-user/)
+  * [Split-Apply-Combine tutorial](http://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/)
+  * [plyr tutorial](http://plyr.had.co.nz/09-user/) - Hadley Wickham plyr tutorial
+  * [reshape tutorial](http://www.slideshare.net/jeffreybreen/reshaping-data-in-r)
 
-  
 ###[MySQL Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/mysqlnotes.md)
 
 ###[Swirl Notes](https://github.com/wdsteck/R-and-GIT-Notes/blob/master/swirlnotes.md)
