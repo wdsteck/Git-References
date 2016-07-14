@@ -33,6 +33,7 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Working with Dates](http://www.r-statistics.com/2012/03/do-more-with-dates-and-times-in-r-with-lubridate-1-1-0/)
 * [R Cookbook](http://www.cookbook-r.com)
 * [R Tutorials](http://www.r-bloggers.com/how-to-learn-r-2/)
+* [RPubs](http://rpubs.com/thoughtfulbloke/subset) tutorial on subsetting vectors.
 
 ###Useful Packages
   In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
