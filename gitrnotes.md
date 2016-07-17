@@ -24,6 +24,7 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [Markdown Tutorials](http://www.markdowntutorial.com/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [What is Markdown?](http://whatismarkdown.com/)
+* [Markdown Official Documentation](http://daringfireball.net/projects/markdown/basics)
 
 ## R Programming Resources
 
