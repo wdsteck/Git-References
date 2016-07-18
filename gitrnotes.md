@@ -26,6 +26,22 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [What is Markdown?](http://whatismarkdown.com/)
 * [Markdown Official Documentation](http://daringfireball.net/projects/markdown/basics)
 
+The Rmd to md to html workflow can be accomplished with the following:
+```
+library(knitr)
+library(markdown)
+
+#transform the .Rmd to a markdown (.md) file.
+knit('r-knitr-markdown.Rmd')
+
+#transform the .md to HTML format
+markdownToHTML("r-knitr-markdown.md", "r-knitr-markdown.html",fragment.only = TRUE)
+```
+
+The `fragment.only = TRUE`
+argument tells the HTML generator to not generated a complete HTML file, only
+generate HTML code to represent what is in the md code.
+
 ## R Programming Resources
 
 * [Data Science Bootcamp](https://www.datacamp.com) is a good source of R tutorials.
