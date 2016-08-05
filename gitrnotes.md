@@ -52,6 +52,7 @@ generate HTML code to represent what is in the md code.
 * [R Cookbook](http://www.cookbook-r.com)
 * [R Tutorials](http://www.r-bloggers.com/how-to-learn-r-2/)
 * [RPubs](http://rpubs.com/thoughtfulbloke/subset) tutorial on subsetting vectors.
+* [`ggplot2` Tutorial](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
 
 ###Useful Packages
   In general, there is probably an R package for whatever data storage mechanism we could run into. The best way to find the package and information on how to use the package is to Google "<data storage mechanism> R package".
