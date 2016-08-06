@@ -26,6 +26,7 @@ Whereas you do not need to use both tools, they are most often used together to 
 * [What is Markdown?](http://whatismarkdown.com/)
 * [Markdown Official Documentation](http://daringfireball.net/projects/markdown/basics)
 * [Markdown by RStudio](http://rmarkdown.rstudio.com)
+* [Equations in Markdown](http://www.introductoryr.co.uk/Reproducibility/Chap_6_Maths.html)
 
 The Rmd to md to html workflow can be accomplished with the following:
 ```
