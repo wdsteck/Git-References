@@ -169,3 +169,12 @@ For if you need a package in a piece of code, make sure it is installed and load
   ```
   Using handles preserves the authentication so that subsequent gets
   do not have to be authenticated. Cookies will retain the credentials.
+
+###Caret Package
+
+Caret tutorials:  
+[UCLM Tutorial](http://www.edii.uclm.es/~useR-2013/Tutorials/kuhn/user_caret_2up.pdf)  
+[R-Project Tutorial](http://cran.r-project.org/web/packages/caret/vignettes/caret.pdf)  
+
+A paper introducing the caret package  
+[iStat Software Caret Intro](http://www.jstatsoft.org/v28/i05/paper)
