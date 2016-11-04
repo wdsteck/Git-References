@@ -11,13 +11,16 @@ Whereas you do not need to use both tools, they are most often used together to 
 ## Git Resources
 
 * [Pro Git book](https://git-scm.com/book/en/v2)
-* [Github Help](https://help.github.com/)
 * [Git Reference](gitref.org)
 * [Data Science School Blog](http://www.dataschool.io/tag/git/)
 * [Git Guides](https://guides.github.com/)
 * [Git SCM Help](https://git-scm.com/about)
 * [Introduction to Git and GitHub on YouTube](https://youtu.be/h1e8oC7g0Ps?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD)
 * [BioConductor Web Site](http://www.bioconductor.org) - Open source software for bioinformatics.
+
+## Github Notes
+* [Github Help](https://help.github.com/)
+* [Create a gh_pages branch for viewing HTML in a repo](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-ghPagesSetup.md)
 
 ## Markdown Resources
 
