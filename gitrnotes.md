@@ -21,6 +21,7 @@ Whereas you do not need to use both tools, they are most often used together to 
 ## Github Notes
 * [Github Help](https://help.github.com/)
 * [Create a gh_pages branch for viewing HTML in a repo](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-ghPagesSetup.md)
+* [Github Pages](https://pages.github.com/)
 
 ## Markdown Resources
 
